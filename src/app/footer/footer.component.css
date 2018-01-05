@@ -1,0 +1,9 @@
+footer {
+  border: solid 1px;
+  height: 40px;
+  background-color: black;
+}
+h5 {
+  text-align: center;
+  color: white;
+}
