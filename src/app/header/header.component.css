@@ -1,6 +1,7 @@
 nav {
     background-color: rgba(0,0,0,0.1) !important;
     border: none;
+    position: fixed;
 }
 a {
   font-size: 35px;

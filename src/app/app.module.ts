@@ -10,6 +10,17 @@ import { FooterComponent } from './footer/footer.component';
 
 import { CarouselModule } from 'ngx-bootstrap';
 import { UserRegistrationComponent } from './user-registration/user-registration.component';
+import {RouterModule, Routes} from '@angular/router';
+import { LoginFormComponent } from './user-registration/login-form/login-form.component';
+import { RegisterFormComponent } from './user-registration/register-form/register-form.component';
+
+const appRoutes: Routes = [
+  {path: '' , component: HomepageComponent} ,
+  {path: 'login' , component: LoginFormComponent  },
+  {path: 'register' , component: RegisterFormComponent  },
+  ]
+
+
 
 @NgModule({
   declarations: [
@@ -18,11 +29,14 @@ import { UserRegistrationComponent } from './user-registration/user-registration
     HomepageComponent,
     FooterComponent,
     UserRegistrationComponent,
+    LoginFormComponent,
+    RegisterFormComponent,
   ],
   imports: [
     BrowserModule,
     RegisterModule,
-    CarouselModule.forRoot()
+    CarouselModule.forRoot(),
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,14 +1,17 @@
 img{
-  height: 890px;
+  height: 887px;
   width: 100%;
 }
-/*
+
 .welcome {
   height: 150px;
   text-align: center;
   font-family: "Castellar";
-  position: absolute;
-  op
-}
+  background-color: aliceblue;
+  color: gray;
+  opacity: .5;
+  position: relative;
+  z-index: 40;
+  top: 40%;
 
-*/
+}

@@ -1,0 +1,34 @@
+.container {
+  height: 860px;
+  width:500px;
+  border: solid 1px;
+  margin-top: 6%;
+  background: rgba(255, 255 ,255, 0.6);
+}
+h1 {
+  text-align: center;
+  font-family: "Lucida Handwriting";
+}
+img {
+  margin-left: 30%;
+  height: 100px;
+}
+.body {
+  width: 1310px;
+  background: url("http://ste.india.com/sites/default/files/2017/01/05/560321-rajasthan-camel.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
+  margin-left: -10%;
+}
+.center {
+  margin-left:25%;
+}
+label {
+  font-family: Castellar ;
+}
+input {
+  text-transform: full-size-kana ;
+  font-family: "Bell MT";
+  font-size: large;
+}

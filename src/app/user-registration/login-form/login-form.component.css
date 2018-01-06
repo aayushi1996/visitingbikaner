@@ -1,0 +1,32 @@
+.container-fluid {
+  border: 3px solid;
+  margin-top: 15%;
+  width: 500px;
+  height: 450px;
+  background: rgba(255, 255 ,255, 0.6);
+}
+h1 {
+  text-align: center;
+  font-family: "Lucida Handwriting";
+}
+img {
+  margin-left: 30%;
+  height: 100px;
+}
+.body {
+  width: 1270px;
+  background: url("http://datravelography.com/wp-content/uploads/2017/04/P7530798.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
+  margin-left:-6%;
+  height: 889px;
+}
+label {
+  font-family: Castellar ;
+}
+input {
+  text-transform: full-size-kana ;
+  font-family: "Bell MT";
+  font-size: large;
+}
