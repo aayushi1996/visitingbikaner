@@ -9,7 +9,7 @@ import {InformationModule} from './Information/information.module';
   ],
   imports: [
     BrowserModule,
-    InformationModule
+    InformationModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,69 @@
+img {
+  height: 198px;
+  width: 250px;
+  border: solid 2px saddlebrown;
+}
+a {
+  color: #020100
+}
+
+.container-fluid{
+  background-image: url("https://img2.goodfon.com/wallpaper/big/9/fd/beautiful-glowing-butterflies.jpg");
+}
+
+.col-sm-3 {
+  padding-left: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.places {
+  color: #e8e4e4;
+  letter-spacing: .1em;
+  text-align: center;
+  PADDING-TOP: 20PX;
+  font-family: fantasy;
+  text-shadow: 5px 4px 4px #07f7ec
+}
+.desc {
+  text-align: center;
+  font-family: "Consolas", sans-serif;
+  text-transform: uppercase;
+  color: #020100;
+  font-size: 20px;
+  text-shadow: -2px 2px 4px #dc8787;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.5s ease;
+}
+.col-sm-3:hover .overlay {
+  background: rgba(0, 0, 0, .3);
+}
+button {
+  position: absolute;
+  width: 55px;
+  top: 160px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .35s ease;
+  background-color: transparent;
+  display: block;
+}
+.about {
+  margin-left: 10px;
+}
+.booking {margin-left: 80px}
+.col-sm-3:hover .about {
+  opacity: 1;
+}
+.col-sm-3:hover .booking {
+  opacity: 1;
+}
+
