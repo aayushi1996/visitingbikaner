@@ -13,9 +13,13 @@ import { UserRegistrationComponent } from './user-registration/user-registration
 import {RouterModule, Routes} from '@angular/router';
 import { LoginFormComponent } from './user-registration/login-form/login-form.component';
 import { RegisterFormComponent } from './user-registration/register-form/register-form.component';
+import {FormsModule} from '@angular/forms';
+import {HttpModule} from '@angular/http';
+import {RegisterService} from './user-registration/register.service';
+
 
 const appRoutes: Routes = [
-  {path: '' , component: HomepageComponent} ,
+  {path: 'home' , component: HomepageComponent} ,
   {path: 'login' , component: LoginFormComponent  },
   {path: 'register' , component: RegisterFormComponent  },
   ]
@@ -36,9 +40,12 @@ const appRoutes: Routes = [
     BrowserModule,
     RegisterModule,
     CarouselModule.forRoot(),
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    FormsModule,
+    HttpModule,
+
   ],
-  providers: [],
+  providers: [RegisterService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

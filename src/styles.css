@@ -3,4 +3,6 @@
 
   opacity: 0 !important;
 }
-
+body {
+  background-color: black;
+}

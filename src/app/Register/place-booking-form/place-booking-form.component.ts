@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {PlaceBookingModel} from './place-booking.model';
+import {NgForm} from '@angular/forms';
+import {RegisterBookingService} from '../registerbooking.service';
 
 @Component({
   selector: 'app-place-booking-form',
@@ -6,10 +9,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./place-booking-form.component.css']
 })
 export class PlaceBookingFormComponent implements OnInit {
-
-  constructor() { }
+    PlaceBookingModel = new PlaceBookingModel('', '' );
+  constructor(private registerBookingService: RegisterBookingService) { }
 
   ngOnInit() {
+  }
+  onBooknow(book: NgForm) {
+    this.registerBookingService.storePlaceBooking(this.PlaceBookingModel)
+      .subscribe(
+        (response) => console.log(response),
+        (error) => console.log(error)
+      );
+    console.log(book.value);
+    alert('You are Registered to Bikaner');
   }
 
 }

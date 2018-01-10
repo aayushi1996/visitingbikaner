@@ -1,9 +1,15 @@
 .container {
-  height: 860px;
+  height: 900px;
   width:500px;
   border: solid 1px;
-  margin-top: 6%;
+  margin-top: 10%;
+  /*background: rgba(255, 255 ,255, 0.6);*/
+}
+.row{
+  width:500px;
+  border: gray inset 5px;
   background: rgba(255, 255 ,255, 0.6);
+
 }
 h1 {
   text-align: center;
@@ -14,12 +20,13 @@ img {
   height: 100px;
 }
 .body {
-  width: 1310px;
+  width: 1280px;
+  /*min-width:100%;*/
   background: url("http://ste.india.com/sites/default/files/2017/01/05/560321-rajasthan-camel.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   float: left;
-  margin-left: -10%;
+  margin-left: -1.6%;
 }
 .center {
   margin-left:25%;
@@ -31,4 +38,21 @@ input {
   text-transform: full-size-kana ;
   font-family: "Bell MT";
   font-size: large;
+}
+ .alert-danger {
+  height: 30px;
+  font-size:1px
+}
+@media screen and (max-width: 768px) {
+  .body{
+    width: 100%;
+    margin-left: 1%;
+  }
+  .row{
+    width: 100%;
+    margin-left: 1%;
+  }
+  .container{
+    width:100%;
+  }
 }

@@ -1,3 +1,49 @@
-<p>
-  hotel-booking-form works!
-</p>
+<div class="body">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-10 col-md-12">
+      <div class="infodiv">
+        <h3>Checkin: 9:00am</h3>
+        <h3>Checkout: 9:00pm</h3>
+      </div>
+      <form (ngSubmit)="onAddBooking(hotelbook)" #hotelbook="ngForm">
+        <div class="stay">
+          <h3>Your Stay Dates</h3>
+          <div class="form-group">
+            <label for="arrival">Arrival Date</label>  <label for="nights" id="nights">Nights</label>
+            <br>
+            <input type="date" name="arrivaldate" [(ngModel)]="hotelBookingModel.arrivaldate"> <input type="number" class="textnumber" name="nights" [(ngModel)]="hotelBookingModel.night">
+
+            <br>
+            <label for="depature">Depature Date</label>
+            <br>
+            <input type="date" name="depaturedate" [(ngModel)]="hotelBookingModel.depature">
+          </div>
+        </div>
+
+          <div class="roomsgusests">
+            <label for="rooms" id="rooms">Rooms</label> <label for="adults" id="adults">Adults</label> <label for="children" id="children">Children</label>
+            <br>
+            <input type="number" class="textnumber" name="rooms" [(ngModel)]="hotelBookingModel.rooms"> <input type="number" class="textnumber" name="adults" [(ngModel)]="hotelBookingModel.adults"> <input type="number" class="textnumber" name="children" [(ngModel)]="hotelBookingModel.children">
+
+
+        <div class="form-group">
+          <label>Rooms</label>
+          <select class="form-control" name="rooms" [(ngModel)]="hotelBookingModel.roomtype" id="roomstype">
+            <option value="1">Select Room</option>
+            <option value="single">Single</option>
+            <option value="double">Double</option>
+            <option value="suites">Suites</option>
+            <option value="royal">Royal</option>
+          </select>
+        </div>
+          </div>
+
+          <button class="btn btn-primary" type="submit">Book Now</button>
+          <button class="btn btn-primary" type="reset">Cancel</button>
+
+      </form>
+    </div>
+  </div>
+</div>
+</div>

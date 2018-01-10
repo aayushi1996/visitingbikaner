@@ -1,0 +1,66 @@
+.container-fluid {
+  margin-top: 18%;
+  height: 750px;
+}
+.stay {
+  /*border: solid 1px;*/
+  width: 500px;
+}
+.textnumber {
+  width:70px;
+}
+.roomsgusests {
+  /*border: 1px solid;*/
+  margin-top: 4px;
+  width: 500px;
+}
+#nights {
+  margin-left: 90px;
+}
+#children {
+  margin-left: 25px;
+}
+#adults {
+  margin-left: 30px;
+}
+.infodiv {
+  /*border: 1px solid;*/
+  width: 500px;
+}
+.body{
+  background: url("https://www.makemytrip.com/travel-guide/media/dg_image/jaipur/Chokhi-Dhani,-flickr-Swan555.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1300px;
+
+}
+.row{
+  width:530px;
+  border: gray inset 5px;
+  background: rgba(255, 255 ,255, 0.6);
+  margin-left: 30%;
+
+}
+@media screen and (max-width: 768px) {
+  .body{
+    width: 100%;
+    margin-left: 1%;
+  }
+  .row{
+    width: 100%;
+    margin-left: 1%;
+  }
+  .container{
+    width:100%;
+    margin-top:45%;
+  }
+  #roomstype{
+    width: 100%;
+  }
+  .stay {
+    width: 100%;
+  }
+  .roomsgusests {
+    width: 100%;
+  }
+}

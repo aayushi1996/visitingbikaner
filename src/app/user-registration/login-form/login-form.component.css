@@ -1,9 +1,17 @@
-.container-fluid {
-  border: 3px solid;
+.container {
+  /*border: 1px solid;*/
   margin-top: 15%;
-  width: 500px;
+  /*width: 500px;*/
+  width: 100%;
   height: 450px;
+  /*background: rgba(255, 255 ,255, 0.6);*/
+}
+.row{
+  width:500px;
+  border: gray inset 5px;
   background: rgba(255, 255 ,255, 0.6);
+  margin-left: 30%;
+
 }
 h1 {
   text-align: center;
@@ -19,7 +27,7 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   float: left;
-  margin-left:-6%;
+  margin-left:-1.6%;
   height: 889px;
 }
 label {
@@ -29,4 +37,18 @@ input {
   text-transform: full-size-kana ;
   font-family: "Bell MT";
   font-size: large;
+}
+@media screen and (max-width: 768px) {
+  .body{
+    width: 100%;
+    margin-left: 1%;
+  }
+  .row{
+    width: 100%;
+    margin-left: 1%;
+  }
+  .container{
+    width:100%;
+    margin-top:45%;
+  }
 }
