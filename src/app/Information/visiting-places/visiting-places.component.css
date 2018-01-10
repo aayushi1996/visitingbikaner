@@ -11,7 +11,7 @@ a {
   background-image: url("https://img2.goodfon.com/wallpaper/big/9/fd/beautiful-glowing-butterflies.jpg");
 }
 
-.col-sm-3 {
+.col-md-3 {
   padding-left: 24px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -60,10 +60,10 @@ button {
   margin-left: 10px;
 }
 .booking {margin-left: 80px}
-.col-sm-3:hover .about {
+.col-md-3:hover .about {
   opacity: 1;
 }
-.col-sm-3:hover .booking {
+.col-md-3:hover .booking {
   opacity: 1;
 }
 
