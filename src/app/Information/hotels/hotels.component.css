@@ -1,0 +1,78 @@
+img {
+  height: 280PX;
+  width: 280PX;
+  margin-left: 25px;
+  border: 2px solid #795548;
+}
+
+.container-fluid{
+  background-image: url("http://image3.mouthshut.com/images/Restaurant/Photo/-48523_21848.jpg");
+}
+
+.col-md-4 {
+  padding-left: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: max-content;
+}
+
+.places {
+  color: #0e0e0e;
+  letter-spacing: .1em;
+  text-align: center;
+  PADDING-TOP: 20PX;
+  font-family: fantasy;
+  text-shadow: 4px 1px 4px #07f7ec;
+}
+.desc {
+  text-align: center;
+  font-family: "Consolas", sans-serif;
+  text-transform: uppercase;
+  color: #020100;
+  font-size: 20px;
+  text-shadow: -2px 2px 4px #dc8787;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.5s ease;
+}
+.col-md-4:hover .overlay {
+  background: rgba(0, 0, 0, .3);
+}
+button {
+  position: absolute;
+  width: 55px;
+  top: 160px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .35s ease;
+  background-color: transparent;
+  display: block;
+}
+.about {
+  margin-left: 40px;
+  margin-top: 60px;
+  color: white;
+}
+.booking {
+  margin-left: 110px;
+  margin-top: 60px;
+  color: white;
+}
+.col-md-4:hover .about {
+  opacity: 1;
+}
+.col-md-4:hover .booking {
+  opacity: 1;
+}
+
+button:hover {
+  background-color: white;
+  color: dodgerblue;
+}

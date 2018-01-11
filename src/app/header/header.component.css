@@ -18,7 +18,7 @@ a {
 }
 .navbar-inverse .navbar-nav>li>a:hover {
   /*text-decoration:  underline;*/
-  border: inset 1px gray;
+  border: solid  gray;
   background: rgba(0,0,0,0.1);
   color: #EEEEEE ;
   border-radius: 20%;

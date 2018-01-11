@@ -32,3 +32,15 @@
     margin-top:45%;
   }
 }
+p
+{
+  color: darkred;
+}
+input.ng-invalid.ng-touched{
+  border: 1px solid red;
+}
+h1{
+  color: black;
+  font-family: "Castellar";
+
+}

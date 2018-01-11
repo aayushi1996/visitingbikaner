@@ -21,7 +21,7 @@ export class PlaceBookingFormComponent implements OnInit {
         (error) => console.log(error)
       );
     console.log(book.value);
-    alert('You are Registered to Bikaner');
+    alert('You Booking is done');
   }
 
 }

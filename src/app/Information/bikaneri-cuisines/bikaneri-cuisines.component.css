@@ -1,0 +1,73 @@
+img {
+  height: 250px;
+  width: 350px;
+}
+.col-md-4 {
+  padding-left: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.cuisins{color: #f5db08;
+  letter-spacing: .1em;
+  text-align: center;
+  PADDING-TOP: 20PX;
+  font-family: fantasy;
+  text-shadow: 5px 4px 4px #261adc}
+
+.desc {
+  text-align: center;
+  font-family: "Consolas", sans-serif;
+  text-transform: uppercase;
+  color: #f5db08;
+  font-size: 20px;
+  text-shadow: -2px 2px 4px #131212;
+}
+.container-fluid{
+  background-image: url("https://rajasthantourismbuzz.files.wordpress.com/2014/03/118_1rajasthani_thali.jpg");
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.5s ease;
+}
+
+button {
+  position: absolute;
+  width: 138px;
+  height: 78px;
+  top: 30px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .35s ease;
+  background-color: transparent;
+  display: block;
+}
+
+.logo {
+  width: 110px;
+  height: 70px;
+  top: 30px;
+  transition: opacity .35s ease;
+  display: block;
+  background-color: transparent;
+  border: 3px solid lightblue;
+}
+.logo :visited {
+  border: none;
+}
+.about {
+  margin-left: 10px;
+  border: none;
+}
+.col-md-4:hover .about {
+  opacity: 1;
+}
+.logo:hover {
+  background-color: white;
+}
+

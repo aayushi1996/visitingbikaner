@@ -17,3 +17,22 @@ img{
 carousel{
   width:1310px
 }
+h2{
+  font-family: "Curlz MT";
+  color:white;
+  font-size: 120px;
+}
+.carousel-caption {
+  background: rgba(0,0,0,0);
+  }
+.btn-default{
+  background: rgba(0,0,0,0);
+  color: white;
+  font-family: "Blackadder ITC";
+  font-size: 35px;
+  border-radius: 20%;
+}
+.btn-default:hover {
+  background: royalblue;
+}
+

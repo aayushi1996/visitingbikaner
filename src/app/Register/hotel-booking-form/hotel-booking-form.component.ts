@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import {HotelbookingModel} from './hotelbooking.model';
 import {NgForm} from '@angular/forms';
 import {RegisterBookingService} from '../registerbooking.service';
+import { ActivatedRoute, Router} from '@angular/router';
+
 
 @Component({
   selector: 'app-hotel-booking-form',
@@ -9,9 +11,11 @@ import {RegisterBookingService} from '../registerbooking.service';
   styleUrls: ['./hotel-booking-form.component.css']
 })
 export class HotelBookingFormComponent implements OnInit {
-  rooms= 'Select Room';
+  defaultroom= 'Select Room';
   hotelBookingModel= new HotelbookingModel('', '' , '', '', '', '', '');
-  constructor(private registerBookingService: RegisterBookingService) { }
+  constructor(private registerBookingService: RegisterBookingService,
+              private route: ActivatedRoute,
+              private router: Router) { }
 
   ngOnInit() {
   }
@@ -22,6 +26,6 @@ export class HotelBookingFormComponent implements OnInit {
         (error) => console.log(error)
       );
     console.log(hotelbook.value);
-    alert('You are Registered to Bikaner');
+    alert('You are Booking is done');
   }
 }

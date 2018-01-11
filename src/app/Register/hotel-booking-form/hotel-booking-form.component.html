@@ -2,35 +2,66 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-sm-10 col-md-12">
-      <div class="infodiv">
-        <h3>Checkin: 9:00am</h3>
-        <h3>Checkout: 9:00pm</h3>
-      </div>
+
       <form (ngSubmit)="onAddBooking(hotelbook)" #hotelbook="ngForm">
         <div class="stay">
           <h3>Your Stay Dates</h3>
           <div class="form-group">
             <label for="arrival">Arrival Date</label>  <label for="nights" id="nights">Nights</label>
             <br>
-            <input type="date" name="arrivaldate" [(ngModel)]="hotelBookingModel.arrivaldate"> <input type="number" class="textnumber" name="nights" [(ngModel)]="hotelBookingModel.night">
+            <input
+              type="date"
+              name="arrivaldate"
+              [(ngModel)]="hotelBookingModel.arrivaldate"
+              required
+              ngModel>
+
+            <input type="number" class="textnumber" name="nights" [(ngModel)]="hotelBookingModel.night" required #night="ngModel" min="1" max="30" ngModel >
+
+           <!-- <small  [hidden]="night.valid || (night.pristine && !night.touched)">
+              <pre [hidden]="!night.errors.required" >Nights is required</pre>
+              <pre [hidden]="!night.errors.pattern" >Nights only number</pre>
+            </small>-->
+
 
             <br>
             <label for="depature">Depature Date</label>
             <br>
-            <input type="date" name="depaturedate" [(ngModel)]="hotelBookingModel.depature">
+            <input type="date" name="depaturedate" [(ngModel)]="hotelBookingModel.depature" required ngModel>
           </div>
         </div>
 
           <div class="roomsgusests">
             <label for="rooms" id="rooms">Rooms</label> <label for="adults" id="adults">Adults</label> <label for="children" id="children">Children</label>
             <br>
-            <input type="number" class="textnumber" name="rooms" [(ngModel)]="hotelBookingModel.rooms"> <input type="number" class="textnumber" name="adults" [(ngModel)]="hotelBookingModel.adults"> <input type="number" class="textnumber" name="children" [(ngModel)]="hotelBookingModel.children">
+            <input
+              type="number" class="textnumber" name="rooms" [(ngModel)]="hotelBookingModel.rooms" ngModel required #rooms="ngModel" min="1" max="50">
+
+            <!--<small  [hidden]="rooms.valid || (rooms.pristine && !rooms.touched)">
+              <p [hidden]="!rooms.errors.required" >rooms is required</p>
+              <p [hidden]="!rooms.errors.pattern" >rooms only number</p>
+            </small>-->
 
 
-        <div class="form-group">
+
+            <input type="text" class="textnumber" name="adults" [(ngModel)]="hotelBookingModel.adults" ngModel #adults="ngModel" min="1" max="25">
+
+            <!--<small  [hidden]="adults.valid || (adults.pristine && !adults.touched)">
+              <p [hidden]="!adults.errors.pattern" >Insert only Numbers</p>
+            </small>-->
+
+
+            <input type="text" class="textnumber" name="children" ngModel [(ngModel)]="hotelBookingModel.children" #children="ngModel" min="1" max="5">
+
+            <!--<small  [hidden]="children.valid || (children.pristine && !children.touched)">
+              <p [hidden]="!children.errors.pattern" >Insert only Numbers</p>
+            </small>
+-->
+
+            <div class="form-group">
           <label>Rooms</label>
-          <select class="form-control" name="rooms" [(ngModel)]="hotelBookingModel.roomtype" id="roomstype">
-            <option value="1">Select Room</option>
+          <select class="form-control" name="rooms" ngModel [(ngModel)]="hotelBookingModel.roomtype" id="roomstype" [ngModel]="defaultroom">
+            <option value="">Select Room</option>
             <option value="single">Single</option>
             <option value="double">Double</option>
             <option value="suites">Suites</option>
@@ -39,7 +70,7 @@
         </div>
           </div>
 
-          <button class="btn btn-primary" type="submit">Book Now</button>
+          <button class="btn btn-primary" type="submit" [disabled]="!hotelbook.valid">Book Now</button>
           <button class="btn btn-primary" type="reset">Cancel</button>
 
       </form>

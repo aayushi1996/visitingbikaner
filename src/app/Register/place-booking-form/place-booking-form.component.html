@@ -5,8 +5,20 @@
       <h1>Book and Enjoy the places</h1>
       <form (ngSubmit)="onBooknow(book)" #book="ngForm">
         <div class="bookingdiv">
-          <input type="date" [(ngModel)]="PlaceBookingModel.date" name="date">
-          <input type="number" placeholder="Travellers" name="travellers" [(ngModel)]="PlaceBookingModel.travellers"> <button class="btn btn-success" type="submit">Book now</button>
+          <input type="date" [(ngModel)]="PlaceBookingModel.date" name="date" required>
+
+          <input type="number" placeholder="Travellers" name="travellers" [(ngModel)]="PlaceBookingModel.travellers" required #travllers="ngModel" min="1" max="100">
+
+          <!--<small  [hidden]="travllers.valid || (travllers.pristine && !travllers.touched)">
+            <p [hidden]="!travllers.errors.required" >travllers is required</p>
+            <p [hidden]="!travllers.errors.pattern" >travllers only number</p>
+          </small>-->
+
+          <span *ngIf="travllers.valid && travllers.touched">Only number</span>
+
+
+          <button class="btn btn-success" type="submit" [disabled]="!book.valid">Book now</button>
+          <br>
           <br>
         </div>
       </form>

@@ -5,7 +5,7 @@ import {HotelBookingFormComponent} from './hotel-booking-form/hotel-booking-form
 import {PlaceBookingFormComponent} from './place-booking-form/place-booking-form.component';
 import {AppComponent} from '../app.component';
 import {CommonModule} from '@angular/common';
-import {RegisterRoutingModule} from './register-routing.module';
+// import {RegisterRoutingModule} from './register-routing.module';
 import {RegisterBookingService} from './registerbooking.service';
 import {HttpModule} from '@angular/http';
 import {FormsModule} from '@angular/forms';
@@ -20,7 +20,7 @@ import {FormsModule} from '@angular/forms';
   ],
   imports: [
     CommonModule,
-    RegisterRoutingModule,
+    // RegisterRoutingModule,
     HttpModule,
     FormsModule
   ],
