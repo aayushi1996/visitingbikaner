@@ -1,10 +1,12 @@
 .footer {
   border: solid 1px;
   height: 40px;
-  background: url("http://www.patternpictures.com/wp-content/uploads/2014/04/PP05572013-Beach-sand-footsteps-texture.jpg");
-  position: absolute;
+  /*background: url("http://www.patternpictures.com/wp-content/uploads/2014/04/PP05572013-Beach-sand-footsteps-texture.jpg");*/
+  position: relative;
   width: 100%;
   border: none;
+  /*margin-top: -.2%;*/
+  background: black;
 }
 /*#logopic{
   height: 35px;
@@ -14,9 +16,10 @@
 }*/
 h6 {
   text-align: center;
-  color: black;
+  color: #ec9e12;
   font-size: 16px;
   font-family: "Lucida Handwriting";
+
 }
 img {
   height: 27px;
@@ -24,7 +27,7 @@ img {
   border: solid 1px;
 }
 .sharediv {
-  margin-top: -30px;
+  margin-top: -27px;
 }
 #share {
   color: white;

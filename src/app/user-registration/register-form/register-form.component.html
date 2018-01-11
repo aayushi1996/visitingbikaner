@@ -18,6 +18,10 @@
             pattern="[a-zA-Z]+">
         </div>
 
+        <div class="alert alert-danger" *ngIf="!firstname.errors && (firstname.touched|| firstname.dirty)">
+          Enter name
+        </div>
+
 
         <div class="form-group">
           <label for="lname">Lastname</label>
@@ -35,11 +39,20 @@
           <label>Gender</label>
           <div class="form-control">
             <label class="radio-inline">
-              <input type="radio" name="gender" value="male" [(ngModel)]="model.gender">Male
+              <input
+                type="radio"
+                name="gender"
+                value="male"
+                [(ngModel)]="model.gender">Male
+
             </label>
 
             <label class="radio-inline">
-              <input type="radio" name="gender" value="female"  [(ngModel)]="model.gender">Female
+              <input
+                type="radio"
+                name="gender"
+                value="female"
+                [(ngModel)]="model.gender">Female
             </label>
           </div>
         </div>
@@ -54,22 +67,55 @@
 
         <div class="form-group">
           <label for="email">Email</label>
-          <input type="email" name="email" id="email" class="form-control" [(ngModel)]="model.email">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            [(ngModel)]="model.email"
+            required
+            #email="ngModel"
+           >
         </div>
 
+      <!--  <small [hidden]="email.valid || (email.pristine && !email.touched)">
+          Email is required and format should be <i>john@doe.com</i>.
+        </small>
+-->
         <div class="form-group">
           <label for="username">Username</label>
-          <input type="text" name="username" id="username" class="form-control" [(ngModel)]="model.username" >
+          <input
+            type="text"
+            name="username"
+            id="username"
+            class="form-control"
+            [(ngModel)]="model.username"
+            required
+            #username="ngModel">
         </div>
 
         <div class="form-group">
           <label for="password">Password</label>
-          <input type="password" name="password" id="password" class="form-control" [(ngModel)]="model.password" >
+          <input
+            type="password"
+            name="password"
+            id="password"
+            class="form-control"
+            [(ngModel)]="model.password"
+            required
+            #pass="ngModel">
         </div>
 
         <div class="form-group">
           <label for="confirmpassword">Confirm password</label>
-          <input type="password" name="confirmpassword" id="confirmpassword" class="form-control" [(ngModel)]="model.confirmpass" >
+          <input
+            type="password"
+            name="confirmpassword"
+            id="confirmpassword"
+            class="form-control"
+            [(ngModel)]="model.confirmpass"
+            required
+            #confirmpass="ngModel">
         </div>
 
         <div class="form-group">
@@ -85,7 +131,7 @@
             required>
         </div>
 
-        <div class="alert alert-danger" *ngIf="!contactno.valid && contactno.dirty"></div>
+        <!--<div [hidden]="contactno.pattern && !contactno.touched">Only Numbers</div>-->
 
         <div class="center">
         <button class="btn btn-primary" type="submit">Register</button>

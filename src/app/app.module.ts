@@ -19,10 +19,11 @@ import {RegisterService} from './user-registration/register.service';
 
 
 const appRoutes: Routes = [
+  {path: '' , component: HomepageComponent} ,
   {path: 'home' , component: HomepageComponent} ,
   {path: 'login' , component: LoginFormComponent  },
   {path: 'register' , component: RegisterFormComponent  },
-  ]
+  ];
 
 
 
