@@ -17,13 +17,15 @@ a {
   padding-bottom: 20px;
 }
 
-.places {
+.headingplaces {
   color: #e8e4e4;
   letter-spacing: .1em;
   text-align: center;
-  PADDING-TOP: 20PX;
   font-family: fantasy;
-  text-shadow: 5px 4px 4px #07f7ec
+  text-shadow: 5px 4px 4px #07f7ec;
+  display: inline-block;
+  margin-left:27%;
+  margin-top: 10%;
 }
 .desc {
   text-align: center;

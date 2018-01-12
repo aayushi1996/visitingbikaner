@@ -19,10 +19,11 @@ img {
 .places {
   color: #0e0e0e;
   letter-spacing: .1em;
-  text-align: center;
-  PADDING-TOP: 20PX;
   font-family: fantasy;
   text-shadow: 4px 1px 4px #07f7ec;
+  display: inline-block;
+  margin-left:30%;
+  margin-top: 15%;
 }
 .desc {
   text-align: center;
