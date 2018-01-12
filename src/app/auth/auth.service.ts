@@ -10,8 +10,11 @@ export class AuthService {
 
   signupUser(email: string, password: string) {
     firebase.auth().createUserWithEmailAndPassword(email, password)
-      .catch(
+    /*  .catch(
         error => console.log(error)
+      );*/
+      .catch(
+        error => alert(('This Email is already in use. Try new' ))
       );
   }
 
@@ -27,7 +30,7 @@ export class AuthService {
         }
       )
       .catch(
-        error => console.log(error)
+        error => alert(('Please check your credientials' ))
       );
   }
 

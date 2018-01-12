@@ -6,9 +6,9 @@
     <form (ngSubmit)="onSignin(f)" #f="ngForm">
       <div class="form-group">
         <label for="email">Mail</label>
-        <input type="email" id="email" name="email" ngModel class="form-control" #email="ngModel" required pattern="">
+        <input type="email" id="email" name="email" ngModel class="form-control"  #email="ngModel" required email>
       </div>
-      <span *ngIf="!email.valid && email.touched">Please enter a valid e-mail</span>
+      <span *ngIf="!email.valid && email.touched">Enter a valid Email</span>
       <div class="form-group">
         <label for="password">Password</label>
         <input
@@ -17,7 +17,7 @@
           name="password"
           ngModel
           class="form-control"
-          maxlength="6"
+          minlength="6"
           required
           #pass="ngModel">
       </div>

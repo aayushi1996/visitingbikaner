@@ -28,7 +28,7 @@
           class="form-control"
           #password="ngModel"
           required
-          maxlength="6">
+          minlength="6">
       </div>
 
       <span *ngIf="!password.valid && password.touched">Enter password of 6 character</span>

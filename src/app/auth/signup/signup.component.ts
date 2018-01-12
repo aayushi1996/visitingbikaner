@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
 import { AuthService } from '../auth.service';
+import * as firebase from 'firebase';
 
 @Component({
   selector: 'app-signup',
@@ -19,8 +20,8 @@ export class SignupComponent implements OnInit {
     const email = form.value.email;
     const password = form.value.password;
     this.authService.signupUser(email, password);
-    form.resetForm(form);
-    alert('You are registered to Bikaner');
+     /* alert('You are registered to Bikaner');*/
+      form.resetForm(form);
   }
 
 }
