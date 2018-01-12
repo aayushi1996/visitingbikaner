@@ -22,6 +22,7 @@ export class PlaceBookingFormComponent implements OnInit {
       );
     console.log(book.value);
     alert('You Booking is done');
+    book.resetForm(book);
   }
 
 }

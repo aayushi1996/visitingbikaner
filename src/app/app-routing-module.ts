@@ -8,14 +8,15 @@ import {HotelsComponent} from './Information/hotels/hotels.component';
 import {BikaneriCuisinesComponent} from './Information/bikaneri-cuisines/bikaneri-cuisines.component';
 import {SigninComponent} from './auth/signin/signin.component';
 import {SignupComponent} from './auth/signup/signup.component';
+import {AuthGuard} from './auth/auth-guard.service';
 
 const appRoute: Routes = [
   {path: '' , component: HomepageComponent} ,
   {path: 'home' , component: HomepageComponent} ,
   {path: 'visitingplaces', component: VisitingPlacesComponent},
-  {path: 'visitingplaces/placebooking' , component: PlaceBookingFormComponent},
+  {path: 'visitingplaces/placebooking' , component: PlaceBookingFormComponent, canActivate: [AuthGuard]},
   {path: 'hotels', component: HotelsComponent},
-  {path: 'hotels/hotelbooking' , component: HotelBookingFormComponent},
+  {path: 'hotels/hotelbooking' , component: HotelBookingFormComponent, canActivate: [AuthGuard]},
   {path: 'cuisins', component: BikaneriCuisinesComponent},
   {path: 'signin', component: SigninComponent },
   {path: 'signup', component: SignupComponent },

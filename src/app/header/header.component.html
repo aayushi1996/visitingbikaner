@@ -38,8 +38,11 @@
         </ul>
         <a routerLink="/home"><img src="./assets/bik11.png"></a>
         <ul class="nav navbar-nav navbar-right">
+          <ng-template [ngIf]="!authService.isAuthenticated()">
           <li><a routerLink="/signin">Login</a></li>
           <li><a routerLink="/signup"> Register</a></li>
+          </ng-template>
+          <li><a (click)="onLogout()" *ngIf="authService.isAuthenticated()">Logout</a></li>
         </ul>
       </nav>
     </div>

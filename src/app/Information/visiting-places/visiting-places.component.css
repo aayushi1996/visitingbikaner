@@ -67,7 +67,10 @@ button {
   opacity: 1;
 }
 .booking:hover {
-  background: black;
-  color: white;
+  background: white;
   text-decoration: none;
+}
+.about:hover {
+  background-color: white;
+  color: white;
 }

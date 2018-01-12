@@ -27,5 +27,6 @@ export class HotelBookingFormComponent implements OnInit {
       );
     console.log(hotelbook.value);
     alert('You are Booking is done');
+    hotelbook.resetForm(hotelbook);
   }
 }

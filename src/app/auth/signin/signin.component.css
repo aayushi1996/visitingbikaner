@@ -1,4 +1,38 @@
 .row {
   margin-top: 200px;
   color: white;
+  border: inset 2px ;
+  width: 500px;
+  margin-left: 30%;
+  background: rgba(0,0,0,0.5);
+}
+.body{
+  background: url("http://ste.india.com/sites/default/files/2017/01/05/560321-rajasthan-camel.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container-fluid {
+  height:900px;
+}
+h1 {
+  text-align: center;
+  font-family: Castellar;
+}
+@media screen and (max-width: 768px) {
+  .row {
+    width: 100%;
+    margin-left:2%;
+  }
+  .body {
+    width:100%;
+  }
+  .container-fluid {
+    width: 100%;
+  }
+}
+input.ng-invalid.ng-touched{
+  border: 1px red solid;
+}
+span {
+  color: red;
 }

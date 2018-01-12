@@ -14,7 +14,7 @@
             <p [hidden]="!travllers.errors.pattern" >travllers only number</p>
           </small>-->
 
-          <span *ngIf="travllers.valid && travllers.touched">Only number</span>
+          <span *ngIf="!travllers.valid && travllers.touched">Only number</span>
 
 
           <button class="btn btn-success" type="submit" [disabled]="!book.valid">Book now</button>
