@@ -7,12 +7,15 @@ img {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.cuisins{color: #f5db08;
+.cuisins{
+  color: #f5db08;
   letter-spacing: .1em;
   text-align: center;
   PADDING-TOP: 20PX;
   font-family: fantasy;
-  text-shadow: 5px 4px 4px #261adc}
+  text-shadow: 5px 4px 4px #261adc;
+  margin-top: 9%;
+}
 
 .desc {
   text-align: center;

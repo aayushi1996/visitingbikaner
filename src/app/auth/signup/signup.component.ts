@@ -20,7 +20,7 @@ export class SignupComponent implements OnInit {
     const email = form.value.email;
     const password = form.value.password;
     this.authService.signupUser(email, password);
-     /* alert('You are registered to Bikaner');*/
+      // alert('You are registered to Bikaner');
       form.resetForm(form);
   }
 

@@ -4,20 +4,22 @@ img{
 }
 
 carousel{
-  width:1310px
+  width:1310px;
+  height: 440px;
 }
 h2{
-  font-family: "Curlz MT";
+  font-family: "serif";
   color:white;
   font-size: 120px;
 }
 .carousel-caption {
   background: rgba(0,0,0,0);
+  top: 19%
   }
 .btn-default{
   background: rgba(0,0,0,0);
   color: white;
-  font-family: "Blackadder ITC";
+  font-family: "serif";
   font-size: 35px;
   border-radius: 20%;
 }

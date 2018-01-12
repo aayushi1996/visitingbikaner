@@ -1,14 +1,15 @@
 .navbar-fixed-top,header  {
 
     border: none;
+    /*height: 20px;*/
     /*position: absolute;*/
 }
 .navbar-inverse {
   background-color: rgba(0,0,0,0.9) !important;
 }
 a {
-  font-size: 35px;
-  font-family: "Blackadder ITC";
+  font-size: 15px;
+  font-family: "Arial";
 
 }
 .navbar-inverse .navbar-nav>li>a
@@ -27,7 +28,7 @@ a {
 img {
   height: 100px;
   width: 300px;
-  margin-left: 5%;
+  margin-left: 8%;
 }
 
 /*body {

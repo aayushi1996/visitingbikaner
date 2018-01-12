@@ -9,7 +9,7 @@ import {RegisterBookingService} from '../registerbooking.service';
   styleUrls: ['./place-booking-form.component.css']
 })
 export class PlaceBookingFormComponent implements OnInit {
-    PlaceBookingModel = new PlaceBookingModel('', '' );
+    PlaceBookingModel = new PlaceBookingModel();
   constructor(private registerBookingService: RegisterBookingService) { }
 
   ngOnInit() {
