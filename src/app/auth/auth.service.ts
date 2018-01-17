@@ -10,6 +10,12 @@ export class AuthService {
 
   signupUser(email: string, password: string) {
     firebase.auth().createUserWithEmailAndPassword(email, password)
+      .then(
+        response => {
+           alert('You are registered to Bikaner');
+          // this.router.navigate(['signin']);
+        }
+      )
     /*  .catch(
         error => console.log(error)
       );*/

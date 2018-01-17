@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import {BikaneriCuisinesComponent} from './bikaneri-cuisines/bikaneri-cuisines.component';
 import {HotelsComponent} from './hotels/hotels.component';
 import {VisitingPlacesComponent} from './visiting-places/visiting-places.component';
+import {RouterModule} from '@angular/router';
+
 
 
 @NgModule({
@@ -12,9 +14,14 @@ import {VisitingPlacesComponent} from './visiting-places/visiting-places.compone
     VisitingPlacesComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    // RouterModule.forChild(),
+  ],
+  exports: [
+    RouterModule,
   ],
   providers: [],
   bootstrap: []
 })
-export class InformationModule { }
+export class InformationModule {
+}

@@ -13,8 +13,8 @@ import {AuthGuard} from './auth/auth-guard.service';
 const appRoute: Routes = [
   {path: '' , component: HomepageComponent} ,
   {path: 'home' , component: HomepageComponent} ,
-  {path: 'visitingplaces', component: VisitingPlacesComponent},
-  {path: 'visitingplaces/placebooking' , component: PlaceBookingFormComponent, canActivate: [AuthGuard]},
+  {path: 'visitingplaces', component: VisitingPlacesComponent },
+    {path: 'visitingplaces/placebooking', component: PlaceBookingFormComponent, canActivate: [AuthGuard]},
   {path: 'hotels', component: HotelsComponent},
   {path: 'hotels/hotelbooking' , component: HotelBookingFormComponent, canActivate: [AuthGuard]},
   {path: 'cuisins', component: BikaneriCuisinesComponent},
@@ -22,7 +22,7 @@ const appRoute: Routes = [
   {path: 'signup', component: SignupComponent },
 ];
 
-@NgModule ({
+ @NgModule ({
   imports : [
     RouterModule.forRoot(appRoute),
   ],
