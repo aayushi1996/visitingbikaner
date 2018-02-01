@@ -22,8 +22,11 @@
 -->
 
 <app-header></app-header>
+<!--<span class="connected" tooltipHtml="No Connection" *ngIf="!(isConnected | async)">signal_wifi_off</span>-->
 
 <div class="container-fluid">
+  <div id="status"></div>
+  <div id="log"></div>
       <router-outlet></router-outlet>
 </div>
 
